@@ -28,7 +28,14 @@ let dressingText = """
 """
 
 let directionText = """
-
+Add 1 1/2 cup veggi oil in pan
+Let it hot for some time
+Add yeast, soya souce, apple cider vinegar and mix it well
+Add 2 clovs garlic and tahini paste let it mix with other element
+Add beeto, almont and spinach leaves and mix all ingredient well
+Add tofu cubes and keep it on low flame.
+Add water in it
+Add brown rice and mix all element and keep it for few mins.
 
 """
 
@@ -65,6 +72,20 @@ struct ContentView: View {
                         .background(Color.purple)
                     Spacer().frame(height: 20)
                     Text(dressingText)
+                }.frame(
+                    minWidth: 0,
+                    maxWidth: .infinity,
+                    minHeight: 0,
+                    maxHeight: .infinity,
+                    alignment: .topLeading
+                  )
+                VStack(alignment: .leading) {
+                    Text("Directions")
+                        .font(.title2)
+                        .frame(minWidth: 0, maxWidth: .infinity, alignment: .topLeading)
+                        .background(Color.purple)
+                    Spacer().frame(height: 20)
+                    Text(directionText)
                 }.frame(
                     minWidth: 0,
                     maxWidth: .infinity,
